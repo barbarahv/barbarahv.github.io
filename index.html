@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<html lang="en"></html>
+<head>
+<title>Site Vox Idiomas</title>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    /* Estilo para diminuir a imagem */
+    .imagem-tamanho-logo {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove qualquer espaço extra em torno da imagem */
+    }
+
+    header {
+      background-color: transparent;
+      color: #fbf5f5;
+      padding: 10px 0;
+      text-align: left;
+      position: relative;
+    }
+
+    .whatsapp-numero {
+      color: rgb(251, 251, 251);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px; /* Tamanho da fonte aumentado */
+      font-family: Arial, sans-serif; /* Altera a família da fonte */
+      position: absolute; /* Posicionamento absoluto */
+      top: 45px; /* Mantém a logo no topo */
+      left: 20px; /* Move o link para a esquerda */
+    }
+
+    .nav {
+        position: absolute;
+        top: 45px; /* Adiciona espaço em branco para o menu */
+        right: 20px;
+    }
+    .nav menu {
+        position: absolute;
+        top: 45px; /* Adiciona espaço em branco para o menu */
+        right: 20px;
+    }
+    .menu-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        top: 10px; /* Adiciona espaço em branco para o menu */
+        right: 20px;
+    }
+
+    .menu-item {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .menu-item:last-child {
+        margin-right: 0;
+    }
+
+    .menu-link {
+        color: #fbf5f5;
+        text-decoration: none;
+        font-size: 18px; /* Aumenta o tamanho da fonte do menu */
+    }
+
+    /* Altera a cor dos itens do menu quando o mouse passa por cima */
+    .menu-link:hover {
+        color: #dd9115; /* Por exemplo, altera para vermelho */
+    }
+
+    footer {
+            background-color: transparent;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+    footer p {
+       margin: 0;
+    }
+
+   .video-container {
+        margin-bottom: 20px; /* Aumenta o espaço abaixo do vídeo */
+        margin-left: 20px; /* Adiciona margem à esquerda do vídeo */
+        margin-right: 20px; /* Adiciona margem à direita do vídeo */
+    }
+
+    /* Estilo para os vídeos dentro do contêiner */
+    .video-container iframe {
+        width: 500px; /* Define a largura dos vídeos */
+        height: 300px; /* Define a altura dos vídeos */
+        margin-right: 20px; /* Adiciona margem entre os vídeos */
+    }
+
+    /* Ajuste para tornar os vídeos mais retangulares em telas menores */
+    @media (max-width: 768px) { /* Ajusta para telas menores */
+        .video-container iframe {
+            width: 350px; /* Define uma largura menor */
+            height: 200px; /* Define uma altura menor */
+        }
+    }
+    
+    /* Limpa a margem direita do último vídeo */
+    .video-container iframe:last-child {
+        margin-right: 0;
+    }
+
+    .conteudo {
+        text-align: center; /* Centraliza o conteúdo */
+        color: #fa6000; /* Define a cor do texto como laranja (#FFA500 é uma tonalidade mais forte de laranja) */
+        background-color: white; /* Define o fundo como branco */
+        padding: 20px; /* Adiciona espaço interno */
+        font-family: Arial, sans-serif; /* Define a fonte */
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+    }
+
+    .conteudo h1 {
+        font-size: 30px; /* Ajusta o tamanho da fonte do título */
+    }
+    
+    #btnOpenForm {
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    #btnOpenForm {
+    font-size: 20px;
+    border-radius: 20px; /* Define a borda do botão como arredondada */
+    padding: 15px 30px; /* Aumenta o preenchimento interno do botão para torná-lo maior */
+    background-color: #fa6000; /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: white; /* Define a cor do texto como branco */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+  }
+
+  #btnOpenForm:hover {
+    background-color: #dd9115; /* Altera a cor de fundo quando o mouse passa por cima */
+  }
+ 
+  #subscriptionForm {
+        display: none;
+    }
+
+  #subscriptionForm.active {
+        display: block; /* Mostra o formulário quando ativado */
+    }
+    
+  #subscriptionForm input[type="submit"] {
+    font-size: 20px;
+    border-radius: 20px; /* Define a borda do botão como arredondada */
+    padding: 15px 30px; /* Aumenta o preenchimento interno do botão para torná-lo maior */
+    background-color: #fa6000; /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: white; /* Define a cor do texto como branco */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+   }
+
+  #subscriptionForm input[type="submit"]:hover {
+    background-color: #dd9115; /* Altera a cor de fundo quando o mouse passa por cima */
+  }
+   #confirmationMessage {
+        display: none;
+    }
+
+     /* Estilos para o botão de voltar ao topo */
+     #btnTopo {
+        display: none; /* Oculta o botão por padrão */
+        position: fixed; /* Fixa o botão na tela */
+        bottom: 20px; /* Distância do botão em relação ao fundo */
+        right: 20px; /* Distância do botão em relação à direita */
+        z-index: 99; /* Garante que o botão esteja sobre o conteúdo */
+        background-color: #e43c0d; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        border: none; /* Remove a borda do botão */
+        border-radius: 50%; /* Torna o botão redondo */
+        cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+        padding: 15px; /* Espaçamento interno do botão */
+        font-size: 16px; /* Tamanho da fonte */
+        width: 40px; /* Largura do botão */
+        height: 40px; /* Altura do botão */
+        }
+
+        #btnTopo:hover {
+        background-color: #e22a00; /* Altera a cor de fundo ao passar o mouse */
+        }
+   </style>
+</head>
+<body>
+    <header class="menu principal">
+        <div class="logo">
+            <img src="./img/logo.png" class="imagem-tamanho-logo">
+        </div>
+        <div class="numero">
+            <a class="whatsapp-numero">WhatsApp (24) 9 9248-1580</a>
+        </div>
+        <nav class="nav menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html" class="menu-link">Início</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="metodo.html" class="menu-link">Método</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="quemsomos.html" class="menu-link">Quem Somos</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="aulas.html" class="menu-link">Aulas Demo</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="contatos.html" class="menu-link">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="conteudo">
+      <!-- Seu conteúdo aqui -->
+      <h1>AULAS DEMO</h1>
+  
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/G-UdQjW2-iQ?si=SJzMVDmI_kzO23Hd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7j61Y4RWcDk?si=ZDmJdJRdjHiAMznn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <!-- Botão para abrir o formulário de inscrição -->
+    <button id="btnOpenForm" onclick="toggleQuiz()">Fazer um teste</button>
+
+<script>
+    function toggleQuiz() {
+        var quizContainer = document.getElementById("quizContainer");
+        if (quizContainer.style.display === "none") {
+            quizContainer.style.display = "block";
+        } else {
+            quizContainer.style.display = "none";
+        }
+    }
+</script>
+
+<div id="quizContainer" style="display: none;">
+    <h2>Teste de Inglês</h2>
+    <form id="quizForm">
+        <label for="q1">1. Qual é a cor do céu em inglês?</label><br>
+        <input type="text" id="q1" name="q1"><br>
+        <label for="q2">2. Como se diz "obrigado" em inglês?</label><br>
+        <input type="text" id="q2" name="q2"><br>
+        <label for="q3">3. Qual é o verbo "ser" em inglês?</label><br>
+        <input type="text" id="q3" name="q3"><br>
+        <label for="q4">4. Como se pronuncia a palavra "hello"?</label><br>
+        <input type="text" id="q4" name="q4"><br>
+        <label for="q5">5. O que significa "goodbye"?</label><br>
+        <input type="text" id="q5" name="q5"><br><br>
+        <input type="button" id="submitBtn" value="Enviar" onclick="submitQuiz()">
+    </form>
+</div>
+
+<div id="resultsContainer" style="display: none;">
+    <h2>Resultados do Teste</h2>
+    <div id="correctAnswers"></div>
+    <div id="incorrectAnswers"></div>
+</div>
+
+    <script>
+        function submitQuiz() {
+            var answers = {
+                q1: "blue",
+                q2: "thank you",
+                q3: "to be",
+                q4: "huh-loh",
+                q5: "adeus"
+            };
+
+            var score = 0;
+            var correctAnswers = [];
+            var incorrectAnswers = [];
+
+            for (var key in answers) {
+                var userAnswer = document.getElementById(key).value.trim().toLowerCase();
+                if (userAnswer === answers[key]) {
+                    score++;
+                    correctAnswers.push("Pergunta " + key.substr(1) + ": " + userAnswer);
+                } else {
+                    incorrectAnswers.push("Pergunta " + key.substr(1) + ": Sua resposta - " + userAnswer + ", Resposta correta - " + answers[key]);
+                }
+            }
+
+            document.getElementById("quizContainer").style.display = "none";
+            document.getElementById("resultsContainer").style.display = "block";
+            document.getElementById("correctAnswers").innerHTML = "<h3>Respostas Corretas:</h3>" + correctAnswers.join("<br>");
+            document.getElementById("incorrectAnswers").innerHTML = "<h3>Respostas Incorretas:</h3>" + incorrectAnswers.join("<br>");
+        }
+    </script>
+
+    <footer>
+      <p>&copy;2024 Vox Idiomas <br> 
+        - Rua Frei Luiz 40, centro - Petrópolis/RJ - CEP 25685-020 (anexo à Igreja do Sagrado)<br>
+         WhatsApp (24) 9 9248-1580 / e-mail: contato@voxidiomas.com.br <br> 
+         Desenvolvido por Bárbara Hansen .</p>
+  </footer>
+
+  <script>
+    // Função para ativar o formulário quando o botão for clicado
+    document.getElementById("btnOpenForm").addEventListener("click", function() {
+        var form = document.getElementById("subscriptionForm");
+        form.style.display = "block";
+    });
+
+    // Função para interceptar o envio do formulário
+    document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
+        // Evita a recarga da página
+        event.preventDefault();
+        
+        // Exibe a mensagem de confirmação
+        document.getElementById("confirmationMessage").style.display = "block";
+    });
+</script>
+
+        <!-- Botão de voltar ao topo -->
+        <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">&#8593;</button>
+
+        <!-- Script para fazer o botão aparecer/desaparecer ao rolar a página -->
+        <script>
+        // Função para mostrar o botão quando a página é rolada para baixo
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("btnTopo").style.display = "block";
+        } else {
+            document.getElementById("btnTopo").style.display = "none";
+        }
+        }
+
+        // Função para rolar suavemente para o topo da página ao clicar no botão
+        function topFunction() {
+        document.body.scrollTop = 0; // Para navegadores Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+</script>
+</body>
+</html>
+</html>
+
+
+
+
+

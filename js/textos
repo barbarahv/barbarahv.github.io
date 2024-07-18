@@ -1,0 +1,17 @@
+var texto = `
+    <div class="texto">
+        <p>A Vox Idiomas oferece o único curso de idiomas especialmente desenvolvido para jovens e adultos, dividido em turmas por faixas etárias, com aulas presenciais e suporte audiovisual. Além disso, oferecemos material de apoio multimídia e conversação interativa exclusiva.</p>
+        <p>Meu nome é Márcio Salles de Vasconcelos, fundador da Vox Idiomas. Há 28 anos ensino Inglês e Espanhol, pesquiso e desenvolvo metodologias para o ensino de línguas estrangeiras para jovens e adultos. Se você quiser me conhecer, assista ao vídeo ao lado e aprenda um pouco de inglês em uma de nossas aulas complementares para alunos presenciais, utilizadas como ferramenta de revisão e fixação de conteúdo e exercício fora de sala de aula. (Atenção: O Curso de Inglês da Vox Idiomas não é um curso online, apenas usamos recursos online e multimídia como ferramentas de exercícios).</p>
+        <p>Graças à Metodologia Acelerativa Comparativa (MAC), própria e exclusiva da Vox Idiomas, desenvolvida durante todos esses anos, aliada ao que há de mais moderno em recursos interativos e audiovisuais, ensinamos, para adultos e adolescentes, o mesmo programa estudado em outros cursos em 6 anos, só que em um tempo muito menor, apenas 3 anos. Priorizamos o desenvolvimento da capacidade de compreensão auditiva e aperfeiçoamento da pronúncia, além do sólido entendimento das diferenças gramaticais e da lógica das línguas estudadas.</p>
+        <p>Não há milagre, não há fórmula mágica, apenas a conjunção do profundo conhecimento das disciplinas ministradas, do compromisso ético de não criar cursos de longa duração visando apenas o lucro e a percepção das dificuldades e necessidades dos alunos para os quais nosso trabalho é direcionado.</p>
+        <p>Além disso, nossas ferramentas interativas de suporte permitem que o aluno se exercite diariamente por quantas horas desejar. O aluno também pode rever nossas aulas em vídeo, utilizar nosso pronunciador para aprimorar a pronúncia, mesmo longe de seu instrutor, além de nossas aulas interativas de conversação, que podem ser acessadas 24 horas, onde o aluno pode dialogar com nossos personagens virtuais em temas do dia-a-dia, como se estivesse vivendo em um país de língua inglesa.</p>
+        <p>O que faz toda a diferença são 28 anos de experiência profissional e milhares de alunos satisfeitos que atestam a excelência do ensino ministrado pela Vox Idiomas.</p>
+        <p> Márcio Vasconcelos</p>
+    </div>
+`;
+
+// Encontre o elemento HTML onde você deseja exibir o texto
+var elemento = document.getElementById("textoContainer");
+
+// Atribua o texto ao conteúdo desse elemento
+elemento.innerHTML = texto;

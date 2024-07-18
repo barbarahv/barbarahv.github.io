@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Vox Idiomas</title>
+    <meta charset="UTF-8"> 
+    <style>
+        /* Estilos CSS */
+        /* Estilo para diminuir a imagem */
+        .imagem-tamanho-logo {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove qualquer espaço extra em torno da imagem */
+        }
+
+        header {
+            background-color: transparent;
+            color: #fbf5f5;
+            padding: 10px 0;
+            text-align: left;
+            position: relative;
+        }
+
+        .whatsapp-numero {
+            color: rgb(251, 251, 251);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px; /* Tamanho da fonte aumentado */
+            font-family: Arial, sans-serif; /* Altera a família da fonte */
+            position: absolute; /* Posicionamento absoluto */
+            top: 45px; /* Mantém a logo no topo */
+            left: 20px; /* Move o link para a esquerda */
+        }
+
+        .nav {
+            position: absolute;
+            top: 45px; /* Adiciona espaço em branco para o menu */
+            right: 20px;
+        }
+
+        .menu-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .menu-item:last-child {
+            margin-right: 0;
+        }
+
+        .menu-link {
+            color: #fbf5f5;
+            text-decoration: none;
+            font-size: 18px; /* Aumenta o tamanho da fonte do menu */
+        }
+
+        /* Altera a cor dos itens do menu quando o mouse passa por cima */
+        .menu-link:hover {
+            color: #fb3c08; /* Por exemplo, altera para vermelho */
+        }
+
+        footer {
+            background-color: transparent;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .texto {
+            width: 75%;
+            padding-right: 20px; /* Adiciona espaço à direita do texto */
+        }
+
+        .video-container {
+            width: 50%;
+            margin-top: 20px; /* Adiciona espaço acima do vídeo */
+        }
+
+        .video-container iframe {
+            width: 75%;
+            height: 10;
+            padding-bottom: 100%; /* Torna o vídeo quadrado */
+            padding-left: 40px; 
+        }
+         /* Estilos para o botão de voltar ao topo */
+         #btnTopo {
+        display: none; /* Oculta o botão por padrão */
+        position: fixed; /* Fixa o botão na tela */
+        bottom: 20px; /* Distância do botão em relação ao fundo */
+        right: 20px; /* Distância do botão em relação à direita */
+        z-index: 99; /* Garante que o botão esteja sobre o conteúdo */
+        background-color: #e43c0d; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        border: none; /* Remove a borda do botão */
+        border-radius: 50%; /* Torna o botão redondo */
+        cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+        padding: 15px; /* Espaçamento interno do botão */
+        font-size: 16px; /* Tamanho da fonte */
+        width: 40px; /* Largura do botão */
+        height: 40px; /* Altura do botão */
+        }
+
+        #btnTopo:hover {
+        background-color: #e22a00; /* Altera a cor de fundo ao passar o mouse */
+        }
+   </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <!-- Logo da Vox Idiomas -->
+            <img src="./img/metado.png" class="imagem-tamanho-logo">
+        </div>
+        <div class="numero">
+            <!-- Número de WhatsApp -->
+            <a class="whatsapp-numero">WhatsApp (24) 9 9248-1580</a>
+        </div>
+        <nav class="nav menu">
+            <!-- Menu de navegação -->
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html" class="menu-link">Início</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="metodo.html" class="menu-link">Método</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="quemsomos.html" class="menu-link">Quem Somos</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="aulas.html" class="menu-link">Aulas Demo</a></li>
+                <li class="menu-item">/</li> <!-- Barra separadora -->
+                <li class="menu-item"><a href="contatos.html" class="menu-link">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <!-- Vídeo -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G-UdQjW2-iQ?si=FS2GL4qkZppPbKd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Texto -->
+        <div class="texto" style="font-size: 18px; color: #464545; line-height: 1.6;">
+            <p>A Vox Idiomas oferece o único curso de idiomas especialmente desenvolvido para jovens e adultos, dividido em turmas por faixas etárias, com aulas presenciais e suporte audiovisual. Além disso, oferecemos material de apoio multimídia e conversação interativa exclusiva.</p>
+            <p>Meu nome é Márcio Salles de Vasconcelos, fundador da Vox Idiomas. Há 28 anos ensino Inglês e Espanhol, pesquiso e desenvolvo metodologias para o ensino de línguas estrangeiras para jovens e adultos. Se você quiser me conhecer, assista ao vídeo ao lado e aprenda um pouco de inglês em uma de nossas aulas complementares para alunos presenciais, utilizadas como ferramenta de revisão e fixação de conteúdo e exercício fora de sala de aula. (Atenção: O Curso de Inglês da Vox Idiomas não é um curso online, apenas usamos recursos online e multimídia como ferramentas de exercícios).</p>
+            <p>Graças à Metodologia Acelerativa Comparativa (MAC), própria e exclusiva da Vox Idiomas, desenvolvida durante todos esses anos, aliada ao que há de mais moderno em recursos interativos e audiovisuais, ensinamos, para adultos e adolescentes, o mesmo programa estudado em outros cursos em 6 anos, só que em um tempo muito menor, apenas 3 anos. Priorizamos o desenvolvimento da capacidade de compreensão auditiva e aperfeiçoamento da pronúncia, além do sólido entendimento das diferenças gramaticais e da lógica das línguas estudadas.</p>
+            <p>Não há milagre, não há fórmula mágica, apenas a conjunção do profundo conhecimento das disciplinas ministradas, do compromisso ético de não criar cursos de longa duração visando apenas o lucro e a percepção das dificuldades e necessidades dos alunos para os quais nosso trabalho é direcionado.</p>
+            <p>Além disso, nossas ferramentas interativas de suporte permitem que o aluno se exercite diariamente por quantas horas desejar. O aluno também pode rever nossas aulas em vídeo, utilizar nosso pronunciador para aprimorar a pronúncia, mesmo longe de seu instrutor, além de nossas aulas interativas de conversação, que podem ser acessadas 24 horas, onde o aluno pode dialogar com nossos personagens virtuais em temas do dia-a-dia, como se estivesse vivendo em um país de língua inglesa.</p>
+            <p>O que faz toda a diferença são 28 anos de experiência profissional e milhares de alunos satisfeitos que atestam a excelência do ensino ministrado pela Vox Idiomas.</p>
+            <p><strong>Márcio Vasconcelos</strong></p>
+        </div>
+    </div>
+        <!-- Botão de voltar ao topo -->
+        <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">&#8593;</button>
+
+        <!-- Script para fazer o botão aparecer/desaparecer ao rolar a página -->
+        <script>
+        // Função para mostrar o botão quando a página é rolada para baixo
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("btnTopo").style.display = "block";
+        } else {
+            document.getElementById("btnTopo").style.display = "none";
+        }
+        }
+
+        // Função para rolar suavemente para o topo da página ao clicar no botão
+        function topFunction() {
+        document.body.scrollTop = 0; // Para navegadores Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+        </script>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy;2024 Vox Idiomas <br> 
+        - Rua Frei Luiz 40, centro - Petrópolis/RJ - CEP 25685-020 (anexo à Igreja do Sagrado)<br>
+        WhatsApp (24) 9 9248-1580 / e-mail: contato@voxidiomas.com.br <br> 
+        Desenvolvido por Bárbara Hansen.</p>
+    </footer>
+</body>
+</html>
